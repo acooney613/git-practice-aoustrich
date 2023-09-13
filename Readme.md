@@ -1,3 +1,3 @@
-#Git Practice Repo
+# Git Practice Repo
 
-##For BYU STAT386
+## For BYU STAT386
