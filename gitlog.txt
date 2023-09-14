@@ -1,0 +1,16 @@
+970ee29 Merge pull request #1 from hermite2010/features-hermite2010
+b6509ed trying again
+8859244 Update Readme.md
+d29124b update file_1
+257b7d4 merged new_features.txt
+d32be4b edit new_features.txt on features branch
+edd15f9 edit new_features.txt on main
+37d0cde Merge branch 'features'
+63b7006 edit file_1.txt
+043a7c4 edit new_features.txt
+9b6ebfe add empty file
+9dd982b add .gitignore
+8a554e1 add Readme.md
+321e09a add file_2.txt
+f064d2c add file_1.txt
+7ac3e39 create new files

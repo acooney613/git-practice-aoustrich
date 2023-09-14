@@ -1,0 +1,187 @@
+  182  brew install git
+  213  git config --global use.name "Aaron Oustrich"
+  214  git config --global user.email "aaron.oustrich@gmail.com"
+  215  git config --global core.editor "code --wait"
+  216  git config --global init.defaultBranch main
+  217  git config --global user.name "Aaron Oustrich"
+  218  git --version
+  223  git --version
+  234  git config --list
+  235  git config --global --edit use.name
+  236  git config --global --edit
+  237  git config --list
+  239  mkdir git_practice
+  240  cd git_practice/
+  243  git status
+  244  git init
+  245  git status
+  247  rm -rf .git
+  250  git init
+  251  git status
+  252  git add file_1.txt 
+  253  git status
+  254  git commit
+  255  git status
+  256  git commit -m 'create file_1.txt'
+  257  git status
+  273  mkdir git_practice
+  274  cd git_practice/
+  275  git init
+  277  git status
+  280  git status
+  281  git add .
+  282  git commit -m 'create new files'
+  283  git status
+  284  git log
+  287  git status
+  288  git add file_1.txt 
+  289  git commit -m 'add file_1.txt'
+  290  git status
+  291  git add file_2.txt 
+  292  git commit -m 'add file_2.txt'
+  293  git status
+  294  git log --oneline
+  296  git add Readme.md 
+  297  git commit -m 'add Readme.md'
+  298  nano .gitignore
+  299  git add .gitignore 
+  300  git status
+  301  git commit -m 'add .gitignore'
+  303  git status
+  305  nano .gitignore
+  306  git status
+  309  git status
+  310  git branch features
+  311  git switch features
+  312  git log --oneline
+  314  git add new_features.txt 
+  315  git commit -m ' add empty file'
+  317  git add new_features.txt 
+  318  git commit -m 'edit new_features.txt'
+  319  git switch
+  320  git switch main
+  323  git add file_1.txt 
+  324  git commit -m 'edit file_1.txt'
+  325  git merge features
+  326  git log --oneline
+  329  git switch features
+  331  git add new_features.txt 
+  332  git commit -m 'edit new_features'
+  333  git switch main
+  334  git merge features 
+  336  git log --oneline
+  338  git switch features
+  339  git switch main
+  341  git add new_features.txt 
+  342  git commit -m 'edit new_features'
+  343  git switch features
+  345  git status
+  346  git switch main
+  347  git merge features
+  350  git switch features
+  353  git branch -d features
+  354  git switch main
+  355  git branch -d features
+  356  git remote add origin git@github.com:aoustrich/git-practice-aoustrich.git
+  357  git push -u origin main
+  358  git clone git@github.com:aoustrich/git-practice-hermite2010.git
+  360  git status
+  361  rm -r git-practice-hermite2010/
+  364  rm git-practice-hermite2010/
+  365  rm -r git-practice-hermite2010/
+  366  nano .gitignore
+  367  git status
+  368  git add .gitignore 
+  369  git commit -m 'modify .gitignore'
+  372  git clone git@github.com:aoustrich/git-practice-hermite2010.git
+  374  cd git-practice-hermite2010/
+  375  git branch -b feature-Aaron-Oustrich
+  376  git checkout -b feature-Aaron-Oustrich
+  378  git status
+  379  git add .
+  380  git commit -m 'add new feature'
+  381  git push origin feature-Aaron-Oustrich
+  383  cd ../git_practice/
+  385  nano .gitignore
+  386  nano .gitignore
+  387  git add .
+  399  rm -r git practice
+  400  rm -r git_practice/
+  401  cd git_practice/
+  407  rm git-practice-hermite2010/
+  408  rm -r git-practice-hermite2010/
+  414  mkdir git_practice
+  415  cd git_practice/
+  416  git init
+  418  git status
+  421  git status
+  422  git add .
+  423  git status
+  424  git commit -m 'create new files'
+  425  git status
+  426  git log --oneline
+  429  git status
+  430  git add file_1.txt 
+  431  git commit -m 'add file_1.txt'
+  432  git status
+  433  git add file_2.txt 
+  434  git commit -m 'add file_2.txt'
+  435  git log --oneline
+  437  git add Readme.md 
+  438  git commit -m 'add Readme.md'
+  439  touch .gitignore
+  440  nano .gitignore
+  441  git add .gitignore 
+  442  git commit -m 'add .gitignore'
+  444  git status
+  446  git status
+  447  git branch features
+  448  git switch featrues
+  449  git switch features
+  450  git log
+  452  git add new_features.txt 
+  453  git commit -m 'add empty file'
+  455  git add new_features.txt 
+  456  git commit -m 'edit new_features.txt'
+  457  git status
+  458  git log --oneline
+  459  git switch main 
+  462  git add file_1.txt 
+  463  git commit -m 'edit file_1.txt'
+  464  git log --oneline
+  465  git merge features
+  466  git log --oneline
+  468  git add new_features.txt 
+  470  git commit -m 'edit new_features.txt on main'
+  471  git switch features
+  474  git add new_features.txt 
+  475  git commit -m 'edit new_features.txt on features branch'
+  476  git log --oneline
+  478  git switch main 
+  480  git log --oneline
+  481  git merge features
+  482  git merge features
+  483  git merge features
+  484  git merge features
+  485  git log --oneline
+  486  git merge features
+  489  git branch -d features
+  490  git merge features
+  491  git switch features
+  492  git merge features
+  493  git branch -D features
+  494  git status
+  495  git add new_features.txt 
+  496  git commit -m 'merged new_features.txt'
+  497  git status
+  498  git remote add origin git@github.com:aoustrich/git-practice-aoustrich.git
+  499  git push -u origin main
+  502  git clone git@github.com:BYUCS235/cs235-assignments.git
+  506  cd git_practice/
+  509  git log --oneline
+  510  git  log
+  511  git pull
+  512  git log --oneline
+  513  git pull
+  514  git log --oneline > gitlog.txt
+  515  history | grep git > history.txt
